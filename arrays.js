@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var chocolateBars = ['snickers', 'hundred grand', 'kitkat', 'skittles'];
 
 function addElementToBeginningOfArray(a, b){
@@ -40,4 +41,16 @@ function destructivelyRemoveElementFromEndOfArray(a){
 
 function removeElementFromEndOfArray(a){
   return a.slice(0, a.length - 1);
+=======
+var chocolateBars = ['snickers', 'hundred grand', 'kitkat', 'skittles']
+
+function addElementToBeginningOfArray(a[], b){
+  var temp = [b, ...a]
+  return temp
+}
+
+function destructivelyAddElementToEndOfArray(a[], b){
+  a = [b,...a]
+  return a
+>>>>>>> d896b706fb4f6efeb5bb57792626ea2380e0b233
 }
